@@ -25,7 +25,7 @@
     "@kubb/cli": "^3.3.4",
     "@kubb/core": "^3.0.11",
     "@kubb/plugin-client": "^3.0.11",
-    "@kubb/plugin-oas": "^3.0.11",
+    "@kubb/plugin-oas": "^4.1.2",
     "@kubb/plugin-react-query": "^3.0.11",
     "@kubb/plugin-ts": "^3.0.11",
     "@module-federation/enhanced": "^0.17.1",
