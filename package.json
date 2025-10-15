@@ -28,7 +28,7 @@
     "@kubb/plugin-oas": "^3.0.11",
     "@kubb/plugin-react-query": "^3.0.11",
     "@kubb/plugin-ts": "^3.0.11",
-    "@module-federation/enhanced": "^0.17.1",
+    "@module-federation/enhanced": "^0.20.0",
     "@module-federation/vite": "^1.7.1",
     "@types/history": "4.7.4",
     "@types/lodash": "^4.14.202",
