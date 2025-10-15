@@ -1,0 +1,89 @@
+{
+  "name": "entra-ui",
+  "version": "1.0.0",
+  "description": "The frontend part of  for entraid integration layer",
+  "author": "EntraID UI team",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "node scripts/generate-webapp-config.mjs",
+    "start-with-oneUI": "vite build && vite preview",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint ./src --fix",
+    "lint:e2e": "eslint ./e2e --fix",
+    "format": "prettier --write src/",
+    "type-check": "tsc --noEmit",
+    "generate-client": "pnpm kubb generate --config kubb.config.ts && pnpm eslint ./src/api/generated --fix",
+    "prepare:e2e": "playwright install --with-deps chromium",
+    "test:e2e": "playwright test --config e2e/playwright.config.ts"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@kubb/cli": "^3.3.4",
+    "@kubb/core": "^3.0.11",
+    "@kubb/plugin-client": "^3.0.11",
+    "@kubb/plugin-oas": "^3.0.11",
+    "@kubb/plugin-react-query": "^3.0.11",
+    "@kubb/plugin-ts": "^3.0.11",
+    "@module-federation/enhanced": "^0.17.1",
+    "@module-federation/vite": "^1.7.1",
+    "@types/history": "4.7.4",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/uuid": "^10.0.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "msw": "^2.6.6",
+    "playwright": "^1.49.1",
+    "prettier": "^3.3.3",
+    "react-i18next": "^15.1.2",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.15.0",
+    "vite": "^5.4.11",
+    "vite-plugin-checker": "^0.8.0",
+    "vite-plugin-top-level-await": "^1.4.4",
+    "vite-tsconfig-paths": "^5.1.2"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.1",
+    "@tanstack/react-query": "^5.61.0",
+    "@tanstack/store": "^0.5.5",
+    "axios": "^1.12.0",
+    "date-fns": "^4.1.0",
+    "history": "5.3.0",
+    "i18next": "^24.0.2",
+    "lodash": "^4.17.21",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-error-boundary": "^5.0.0",
+    "react-hook-form": "^7.53.2",
+    "react-hook-form-persist": "^3.0.0",
+    "react-i18next": "^15.1.2",
+    "rxjs": "^7.8.1",
+    "styled-components": "^6.1.13",
+    "uuid": "^11.0.3",
+    "zod": "^3.23.8",
+    "zustand": "^5.0.2"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  },
+  "pnpm": {
+    "overrides": {
+      "form-data": "4.0.4",
+      "@eslint/plugin-kit": "0.3.4"
+    }
+  }
+}
